@@ -1,0 +1,60 @@
+.footer {
+    background-color: black;
+    padding: 2px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap; 
+    
+  }
+  
+  .footer-section {
+    flex: 1; 
+    min-width: 200px; 
+  }
+  
+  .headings {
+    font-size: small;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 60px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 20px;
+    font-size: small;
+  }
+  
+  .footer-list li {
+    margin-bottom: 8px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .footer-list li:hover {
+    color: #fff;
+  }
+  
+  .line {
+    margin-top: 4px;
+    width: 100%;
+    border: 1px solid white;
+    
+  }
+  
+  .payment {
+    width: 600px;
+    margin-left: 0; 
+    
+  }
+  
+  .payment-heading {
+    font-size: medium;
+    color: white;
+    margin-left: 40px;
+  }
+  

@@ -1,0 +1,46 @@
+.logo{
+    height: 30px;
+    width: 260px;
+    margin-left: 1cm;
+    margin-top: 1cm;
+  }
+  .search-box {
+    position: relative;
+    display: inline-flex;
+    margin-top: 20px;
+    width: 100%;
+    height: 1cm;
+    max-width: 300px;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: white;
+  }
+  /* .bag-buttons {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 6px;
+    background-color: white;
+  } */
+  
+  /* .bag {
+    border: none;
+    font-size: 18px; 
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    border-radius: 50%;
+  } */
+
+  .nav-links{
+    background-color: black;
+    width: 100%;
+  }
