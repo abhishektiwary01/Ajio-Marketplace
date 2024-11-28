@@ -1,71 +1,70 @@
 import React from 'react';
+import '../AjioLuxe/styles/HeroBannerLuxe.css'
 
-const HeroBannerAjio = () => {
+const HeroBannerLuxe = () => {
   return (
-    <div className='hero-banner'>
-      
+    <div className="hero-banner">
+      {/* First Banner */}
       <div
-        id="carouselExampleInterval"
-        className="carousel"
-        role='button'
+        id="carouselMainBanner"
+        className="carousel slide"
         data-bs-ride="carousel"
-        data-bs-interval="2000" // Auto play interval (in milliseconds)
+        data-bs-interval="2000"
       >
-        <div className="carousel-inner mt-20">
+        <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="2000">
             <img
-              src="public\Banners\Aldo-banner.avif"
+              src="public/Banners/Aldo-banner.avif"
               className="d-block w-100"
-              alt="..."
-              style={{ height: '650px', objectFit: 'cover' }} // Smaller height
+              alt="Aldo Banner"
+              style={{ height: '650px', objectFit: 'cover' }}
             />
           </div>
           <div className="carousel-item" data-bs-interval="2000">
             <img
-              src="public\Banners\Nike-offer.jpg"
+              src="public/Banners/Nike-offer.jpg"
               className="d-block w-100"
-              alt="..."
-              style={{ height: '650px', objectFit: 'cover' }} // Smaller height
-            />
-          </div>
-          <div className="carousel-item"  data-bs-interval="2000">
-            <img
-              src="public\Banners\denim-offer.jpg"
-              className="d-block w-100"
-              alt="..."
-              style={{ height: '650px', objectFit: 'cover' }} // Smaller height
-            />
-          </div>
-          <div className="carousel-item"  data-bs-interval="2000">
-            <img
-              src="public\Banners\superdry-banner.avif"
-              className="d-block w-100"
-              alt="..."
-              style={{ height: '650px', objectFit: 'cover' }} // Smaller height
-            />
-          </div>
-          <div className="carousel-item"  data-bs-interval="2000">
-            <img
-              src="public\Banners\Tommy-Banner.avif"
-              className="d-block w-100"
-              alt="..."
-              style={{ height: '650px', objectFit: 'cover' }} // Smaller height
+              alt="Nike Offer"
+              style={{ height: '650px', objectFit: 'cover' }}
             />
           </div>
           <div className="carousel-item" data-bs-interval="2000">
             <img
-              src="public\Banners\wrangler-jeans.jpg"
+              src="public/Banners/denim-offer.jpg"
               className="d-block w-100"
-              alt="..."
-              style={{ height: '650px', objectFit: 'cover' }} // Smaller height
+              alt="Denim Offer"
+              style={{ height: '650px', objectFit: 'cover' }}
             />
           </div>
-
+          <div className="carousel-item" data-bs-interval="2000">
+            <img
+              src="public/Banners/superdry-banner.avif"
+              className="d-block w-100"
+              alt="Superdry Banner"
+              style={{ height: '650px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carousel-item" data-bs-interval="2000">
+            <img
+              src="public/Banners/Tommy-Banner.avif"
+              className="d-block w-100"
+              alt="Tommy Banner"
+              style={{ height: '650px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carousel-item" data-bs-interval="2000">
+            <img
+              src="public/Banners/wrangler-jeans.jpg"
+              className="d-block w-100"
+              alt="Wrangler Jeans"
+              style={{ height: '650px', objectFit: 'cover' }}
+            />
+          </div>
         </div>
         <button
           className="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleInterval"
+          data-bs-target="#carouselMainBanner"
           data-bs-slide="prev"
         >
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -74,7 +73,7 @@ const HeroBannerAjio = () => {
         <button
           className="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleInterval"
+          data-bs-target="#carouselMainBanner"
           data-bs-slide="next"
         >
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
@@ -82,43 +81,43 @@ const HeroBannerAjio = () => {
         </button>
       </div>
 
-      {/* Second Banner  */}
+      {/* Second Banner */}
       <div
-        id="carouselExampleInterval"
-        className="carousel slide"
+        id="carouselSmallBanner"
+        className="carousel slide mt-4"
         data-bs-ride="carousel"
-        data-bs-interval="3000" // Auto play interval (in milliseconds)
+        data-bs-interval="3000"
       >
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="3000">
             <img
-              src="public\Templates\ICICI-offer.avif"
+              src="public/Templates/ICICI-offer.avif"
               className="d-block w-100"
-              alt="..."
-              style={{ height: '100px', objectFit: 'cover' }} // Smaller height
+              alt="ICICI Offer"
+              style={{ height: '100px', objectFit: 'cover' }}
             />
           </div>
           <div className="carousel-item" data-bs-interval="3000">
             <img
-              src="public\Templates\SBI-offer.avif"
+              src="public/Templates/SBI-offer.avif"
               className="d-block w-100"
-              alt="..."
-              style={{ height: '100px', objectFit: 'cover' }} // Smaller height
+              alt="SBI Offer"
+              style={{ height: '100px', objectFit: 'cover' }}
             />
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item" data-bs-interval="3000">
             <img
-              src="public\Templates\Ajio-Offer.avif"
+              src="public/Templates/Ajio-Offer.avif"
               className="d-block w-100"
-              alt="..."
-              style={{ height: '100px', objectFit: 'cover' }} // Smaller height
+              alt="Ajio Offer"
+              style={{ height: '100px', objectFit: 'cover' }}
             />
           </div>
         </div>
         <button
           className="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleInterval"
+          data-bs-target="#carouselSmallBanner"
           data-bs-slide="prev"
         >
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -127,7 +126,7 @@ const HeroBannerAjio = () => {
         <button
           className="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleInterval"
+          data-bs-target="#carouselSmallBanner"
           data-bs-slide="next"
         >
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
@@ -138,4 +137,4 @@ const HeroBannerAjio = () => {
   );
 };
 
-export default HeroBannerAjio;
+export default HeroBannerLuxe;

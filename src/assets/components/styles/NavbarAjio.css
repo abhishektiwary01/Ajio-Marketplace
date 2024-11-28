@@ -122,22 +122,34 @@
   border-radius: 50%;
 }
 
-/* Dropdown menu styling */
-.dropdown-menu {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  background-color: white;
-  border: none;
-}
-
-.dropdown-menu span {
-  flex: 1 1 25%; /* Four items in a row */
-  text-align: center;
-  padding: 5px;
-}
-
-/* Remove default arrow */
-.navbar-nav .dropdown-toggle::after {
+/* Base styles for dropdowns */
+.nav-item .dropdown-menu {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
 }
+
+/* Show dropdown on hover */
+.nav-item:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Ensure proper positioning for all dropdown menus */
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+/* Optional: Add hover effects to nav links */
+.nav-item:hover > .nav-link {
+  color: #007bff;
+}
+

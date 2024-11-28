@@ -1,64 +1,61 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../AjioLuxe/styles/NavbarLuxe.css';
-import { GrFavorite } from "react-icons/gr";
+import { MdFavoriteBorder } from "react-icons/md";
 import { BiShoppingBag } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom';
 
-
 function NavbarAjio() {
-  
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/'); 
+    navigate('/'); // Navigate to the "HomeLuxe" route
   };
 
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container-fluid">
+        {/* Login Section */}
         <div className="login d-inline fixed-top">
-          <p className="login-data d-inline" role='button'>Sign In/Join AJIO</p>
-          <p className="login-data d-inline " role='button'>Customer Care</p>
-          <button className="luxe text-light" onClick={handleClick} >
+          <p className="login-data d-inline" role="button">Sign In/Join AJIO</p>
+          <p className="login-data d-inline" role="button">Customer Care</p>
+          <button className="luxe text-light" onClick={handleClick}>
             Visit AJIO
           </button>
- {/* Search Box  */}
- {/* <div class="input-group" style="width: 400px;">
-  <div class="form-outline" data-mdb-input-init style="flex: 1;">
-    <input 
-      type="search" 
-      id="form1" 
-      class="form-control" 
-      placeholder="Search here..." 
-    />
-    <label class="form-label" for="form1">Search</label>
-  </div>
-  <button 
-    type="button" 
-    class="btn" 
-    style="background-color: black; color: white; border: none;">
-    <i class="fas fa-search"></i>
-  </button>
-</div> */}
-
-{/* Bag icons  */}
-          <div className="bag-buttons">
-            <button className="bag">
-            <GrFavorite />
-            </button>
-            <button className='bag'>
-            <BiShoppingBag />
-            </button>
-          </div>
         </div>
 
+        {/* Logo */}
         <img
-          src="public\Icons\ajioluxe-logo.avif"
+          src="/Icons/ajioluxe-logo.avif" // Ensure the path is correct
           className="logo"
           alt="AJIO Logo"
         />
 
+        {/* Search Bar and Icons */}
+        <div className="header-container">
+          <div className="search-bar">
+            <input
+              id="search-input"
+              type="search"
+              className="form-control"
+              placeholder="Search Luxe Store"
+            />
+            <button id="search-button" type="button" className="btn">
+              <img
+                src="/Icons/vector-search-icon-removebg-preview.png"
+                alt="Search"
+                className="search-icon"
+              />
+            </button>
+          </div>
+
+          <div className="bag-buttons">
+            <MdFavoriteBorder className="cart" role="button" />
+            <BiShoppingBag className="cart" role="button" />
+          </div>
+        </div>
+
+        {/* Navbar Toggler for Small Screens */}
         <button
           className="navbar-toggler"
           type="button"
@@ -70,7 +67,8 @@ function NavbarAjio() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        
+
+        {/* Navigation Links */}
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -95,7 +93,7 @@ function NavbarAjio() {
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link "
+                className="nav-link dropdown-toggle"
                 href="#drop"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -103,43 +101,39 @@ function NavbarAjio() {
               >
                 HOME & KITCHEN
               </a>
-              {/* <ul className="dropdown-menu flex flex-row justify-between items-start">
+              <ul className="dropdown-menu">
                 <li>
                   <a className="dropdown-item" href="#men">
-                    <div><p className='head-list'>Bed Linen</p>
+                    <p className="head-list">Bed Linen</p>
+                    <ul>
                       <li>Bedsheet</li>
-                      <li>Bed cover</li>
-                      <li>Blanket </li>
-                      <li>Comfertor</li>
+                      <li>Bed Cover</li>
+                      <li>Blanket</li>
+                      <li>Comforter</li>
                       <li>Mattress Cover</li>
                       <li>Quilt</li>
-              
-                    </div>
+                    </ul>
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    <p>Coushion and Pillow</p>
-                    <li> Cushions</li>
-                    <li> Pillows</li>
-                    <li> Bolsters</li>
-                    <li> Pillow Covers</li>
-                    <li> Cushions Cover</li>
-                    <li> Bed Wedge</li>
+                    <p>Cushion and Pillow</p>
+                    <ul>
+                      <li>Cushions</li>
+                      <li>Pillows</li>
+                      <li>Bolsters</li>
+                      <li>Pillow Covers</li>
+                      <li>Cushion Covers</li>
+                      <li>Bed Wedge</li>
+                    </ul>
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Rugs, Carpets and Mats
+                    Rugs, Carpets, and Mats
                   </a>
                 </li>
-               </ul> */}
-
-                {/* starts  */}
-                
-
-                {/* end  */}
-              
+              </ul>
             </li>
           </ul>
         </div>
