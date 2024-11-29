@@ -10,9 +10,6 @@ const TrendingPage = () => {
 
   const navigate = useNavigate();
 
-  const handleProductClick = () => {
-    navigate('/ProductsAjio'); 
-  };
   // Fetch products from the API
   useEffect(() => {
     fetch('https://fakestoreapi.com/products') // Fetch 12 products
@@ -56,7 +53,7 @@ const TrendingPage = () => {
             <img
               src={product.image}
               alt={product.title}
-              onClick={handleProductClick}
+              
               className="card-img-top"
             />
             <div className="card-body">

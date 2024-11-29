@@ -57,7 +57,7 @@
 /* Navbar design */
 .navbar {
   height: 2cm;
-  width: 100%;
+  width: 120%;
   border: 5px;
   border-color: white;
   background-color: white;
@@ -112,6 +112,7 @@
 
 .bag {
   background: rgb(35, 34, 34);
+  display: inline-flex;
   border: none;
   font-size: 18px;
   padding: 8px;
@@ -137,18 +138,6 @@ span {
   width: 100px;
 }
 
-
-.bag {
-  background: rgb(35, 34, 34);
-  border: none;
-  font-size: 18px;
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 5px;
-  border-radius: 50%;
-}
 
 /* Base styles for dropdowns */
 .nav-item .dropdown-menu {

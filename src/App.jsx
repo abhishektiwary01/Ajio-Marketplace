@@ -6,7 +6,6 @@ import HomeLuxe from './assets/pages/HomeLuxe'; // Assuming you have this compon
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import TrendingPage from './assets/pages/TrendingPage';
-import ProductAjio from './assets/pages/ProductAjio';
 import OfferDetails from './assets/pages/OfferDetails';
 import CustomerCare from './assets/pages/CustomerCare';
 // import Loginpage from './assets/pages/LoginPage';
@@ -25,10 +24,7 @@ const router = createBrowserRouter([
     path: "/trendingpage",
     element: <TrendingPage></TrendingPage>
   },
-  {
-    path: "/productsAjio",
-    element: <ProductAjio></ProductAjio>
-  },
+
   {
     path: "/offers",
     element: <OfferDetails></OfferDetails>

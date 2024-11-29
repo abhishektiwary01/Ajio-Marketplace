@@ -25,7 +25,7 @@ const HeroBannerAjio = () => {
         <div className="carousel-inner mt-20">
           <div className="carousel-item active" data-bs-interval="2000">
             <img
-              src="public\Banners\Aldo-banner.avif"
+              src="public\denim-offer.jpg"
               className="d-block w-100"
               onClick={handleClick}
               alt="..."
