@@ -29,7 +29,7 @@ This repository contains the front-end clone of the **Ajio** e-commerce platform
 
 2.  Navigate to the project directory:
 
--cd ajio-clone
+- cd ajio-clone
 
 3. Install dependencies:
 
@@ -38,7 +38,7 @@ This repository contains the front-end clone of the **Ajio** e-commerce platform
 
 4. Run the development server:
 
-npm start
+- npm start
 
 5. Open your browser and visit http://localhost:3000 to view the project.
 
@@ -48,21 +48,29 @@ npm start
 ajio-clone/
 │
 ├── public/
-│   ├── index.html        
-│   └── ...                
-│
+│   ├── Banners      
+│   ├── Card Image
+|   ├── Icons           
+│   └── Templates
 ├── src/
-│   ├── components/         
-│   ├── pages/              
-│   ├── context/          
-│   ├── App.js             
-│   ├── index.js           
-│   └── ...                
+│   └── assets   
+|       ├── components/       
+│       ├── pages/              
+│       ├── styles/       
+│       ├── App.js             
+│       ├── index.js           
+│       └── main.jsx                
 │
-├── tailwind.config.js     
-├── package.json           
-└── README.md               
-````
+├── index.html    
+├── package.json  
+├── vite.config.js         
+└── README.md   
 
-# Author
--Abhishek Tiwari
+````
+# Acknowledgements
+- Ajio for the inspiration behind this project.
+- Bootstrap for CSS.
+- Firebase for Authentication.
+
+# Developed By
+- Abhishek Tiwari
