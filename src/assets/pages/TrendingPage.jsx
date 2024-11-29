@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import NavbarAjio from '../components/NavbarAjio';
-import '../styles/TrendingPage.css';
+import '../styles/TrendingPage.css'
 import { useNavigate } from 'react-router-dom';
 import FooterAjio from '../components/FooterAjio';
 
