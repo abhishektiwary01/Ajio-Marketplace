@@ -1,7 +1,15 @@
 import React from "react";
 import "./styles/BodyAjio.css";
+import { useNavigate } from 'react-router-dom';
 
 const BodyAjio = () => {
+
+  const navigate = useNavigate();
+
+  const handleTrendClick = () => {
+    navigate('/trendingpage');
+  };
+
   return (
     <div>
       {/* Banner */}
@@ -21,6 +29,7 @@ const BodyAjio = () => {
               src="public/Banners/Gant-Banner.jpg"
               className="d-block w-100"
               alt="Gant Banner"
+              onClick={handleTrendClick}
               style={{ height: "650px", objectFit: "cover" }}
             />
           </div>
@@ -28,6 +37,7 @@ const BodyAjio = () => {
             <img
               src="public/Banners/Galilabs-Banner.jpg"
               className="d-block w-100"
+              onClick={handleTrendClick}
               alt="Galilabs Banner"
               style={{ height: "650px", objectFit: "cover" }}
             />
@@ -36,6 +46,7 @@ const BodyAjio = () => {
             <img
               src="public/Banners/Miraggio-Banner.jpg"
               className="d-block w-100"
+              onClick={handleTrendClick}
               alt="Miraggio Banner"
               style={{ height: "650px", objectFit: "cover" }}
             />
@@ -44,6 +55,7 @@ const BodyAjio = () => {
             <img
               src="public/Banners/superdry-banner.avif"
               className="d-block w-100"
+              onClick={handleTrendClick}
               alt="Superdry Banner"
               style={{ height: "650px", objectFit: "cover" }}
             />
@@ -89,6 +101,7 @@ const BodyAjio = () => {
         className="carousel slide mt-4"
         data-bs-ride="carousel"
         data-bs-interval="3000"
+        onClick={handleTrendClick}
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -96,6 +109,7 @@ const BodyAjio = () => {
               src="public/Banners/Westernwear-Banner.avif"
               className="d-block w-100"
               alt="Westernwear Banner"
+              onClick={handleTrendClick}
               style={{ height: "650px", objectFit: "cover" }}
             />
           </div>
@@ -104,6 +118,7 @@ const BodyAjio = () => {
               src="public/Banners/Bene-Kleed-Banner.avif"
               className="d-block w-100"
               alt="Bene Kleed Banner"
+              onClick={handleTrendClick}
               style={{ height: "650px", objectFit: "cover" }}
             />
           </div>
@@ -111,6 +126,7 @@ const BodyAjio = () => {
             <img
               src="public/Banners/ALDO-Banner.jpg"
               className="d-block w-100"
+              onClick={handleTrendClick}
               alt="ALDO Banner"
               style={{ height: "650px", objectFit: "cover" }}
             />
@@ -120,6 +136,7 @@ const BodyAjio = () => {
           className="carousel-control-prev"
           type="button"
           data-bs-target="#carousel2"
+          
           data-bs-slide="prev"
         >
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -129,6 +146,7 @@ const BodyAjio = () => {
           className="carousel-control-next"
           type="button"
           data-bs-target="#carousel2"
+          
           data-bs-slide="next"
         >
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
@@ -151,6 +169,7 @@ const BodyAjio = () => {
             <img
               src="public\Banners\CK.avif"
               className="d-block w-100"
+              onClick={handleTrendClick}
               alt="Westernwear Banner"
               style={{ height: "650px", objectFit: "cover" }}
             />
@@ -160,6 +179,7 @@ const BodyAjio = () => {
               src="public\Banners\Elle.avif"
               className="d-block w-100"
               alt="Bene Kleed Banner"
+              onClick={handleTrendClick}
               style={{ height: "650px", objectFit: "cover" }}
             />
           </div>
@@ -168,6 +188,7 @@ const BodyAjio = () => {
               src="public\Banners\Showoff.avif"
               className="d-block w-100"
               alt="ALDO Banner"
+              onClick={handleTrendClick}
               style={{ height: "650px", objectFit: "cover" }}
             />
           </div>

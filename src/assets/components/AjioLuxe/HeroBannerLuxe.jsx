@@ -14,7 +14,7 @@ const HeroBannerLuxe = () => {
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="2000">
             <img
-              src="public/Banners/Aldo-banner.avif"
+              src="public\Icons\26112024-D-Luxe-BlackFridaySale.webp"
               className="d-block w-100"
               alt="Aldo Banner"
               style={{ height: '650px', objectFit: 'cover' }}
@@ -38,28 +38,13 @@ const HeroBannerLuxe = () => {
           </div>
           <div className="carousel-item" data-bs-interval="2000">
             <img
-              src="public/Banners/superdry-banner.avif"
+              src="public\Banners\29112024-D-Luxe-UnmissableOffers-BigBagDay-Clutches.webp"
               className="d-block w-100"
               alt="Superdry Banner"
               style={{ height: '650px', objectFit: 'cover' }}
             />
           </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img
-              src="public/Banners/Tommy-Banner.avif"
-              className="d-block w-100"
-              alt="Tommy Banner"
-              style={{ height: '650px', objectFit: 'cover' }}
-            />
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img
-              src="public/Banners/wrangler-jeans.jpg"
-              className="d-block w-100"
-              alt="Wrangler Jeans"
-              style={{ height: '650px', objectFit: 'cover' }}
-            />
-          </div>
+   
         </div>
         <button
           className="carousel-control-prev"

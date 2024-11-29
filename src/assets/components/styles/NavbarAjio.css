@@ -122,6 +122,34 @@
   border-radius: 50%;
 }
 
+.menu-row {
+  display: flex; /* Arrange child elements in a row */
+  gap: 70px; /* Add spacing between the spans */
+  width: 700px;
+  /* align-items: center; */
+  height: 100%; ;
+}
+
+
+span {
+  display: flex;
+  flex-direction: column; /* Arrange list items vertically */
+  width: 100px;
+}
+
+
+.bag {
+  background: rgb(35, 34, 34);
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
 /* Base styles for dropdowns */
 .nav-item .dropdown-menu {
   display: none;
@@ -143,6 +171,12 @@
   display: block;
 }
 
+.dropdown-menu {
+  list-style: none;
+  padding: 20px;
+  margin: 20px;
+}
+
 /* Ensure proper positioning for all dropdown menus */
 .navbar-nav .nav-item {
   position: relative;
@@ -153,3 +187,23 @@
   color: #007bff;
 }
 
+.dropdown-menu ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-menu ul > li {
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-menu ul ul {
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.dropdown-menu strong {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  display: inline-block;
+}

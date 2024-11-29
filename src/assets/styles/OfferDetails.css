@@ -1,0 +1,11 @@
+.offer-heading{
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 120px;
+}
+.offer-body{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
