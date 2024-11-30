@@ -87,7 +87,7 @@ function NavbarAjio() {
         </div></div>
 
         <img
-          src="public\Icons\Ajio-Logo2.svg"
+          src="public/Icons/Ajio-Logo2.svg"
           className="logo"
           alt="AJIO Logo"
           role='button'
