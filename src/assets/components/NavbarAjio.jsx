@@ -77,7 +77,7 @@ function NavbarAjio() {
           </div>
 
           <div className="bag-buttons">
-            <button className="bag text-white" onClick={handleCartclick}>
+            <button className="bag text-white">
               <MdOutlineFavoriteBorder />
             </button>
             <button className='bag text-white' onClick={handleCartclick}>
