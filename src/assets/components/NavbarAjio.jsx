@@ -30,6 +30,10 @@ function NavbarAjio() {
     setSearchQuery(e.target.value);
   };
 
+  const handleCartclick = () =>{
+    navigate('/CartPage')
+  }
+
   // Handle search button click
   const handleSearch = () => {
     if (searchQuery.trim() !== "https://fakestoreapi.com/products") {
@@ -73,10 +77,10 @@ function NavbarAjio() {
           </div>
 
           <div className="bag-buttons">
-            <button className="bag text-white">
+            <button className="bag text-white" onClick={handleCartclick}>
               <MdOutlineFavoriteBorder />
             </button>
-            <button className='bag text-white'>
+            <button className='bag text-white' onClick={handleCartclick}>
               <MdOutlineShoppingBag />
             </button>
           </div>

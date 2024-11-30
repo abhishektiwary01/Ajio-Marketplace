@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import TrendingPage from './assets/pages/TrendingPage';
 import OfferDetails from './assets/pages/OfferDetails';
 import CustomerCare from './assets/pages/CustomerCare';
+import CartPage from './assets/pages/CartPage';
 // import Loginpage from './assets/pages/LoginPage';
 
 // Corrected router definition
@@ -33,7 +34,10 @@ const router = createBrowserRouter([
     path: "/CustomerCare",
     element: <CustomerCare/>
   },
-
+  {
+    path: "/CartPage",
+    element: <CartPage/>
+  },
 ])
 function App() {
   return (
